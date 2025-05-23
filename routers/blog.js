@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const blogs = require('../data/blogs.js')
+// const blogs = require('../data/blogs.js')
 const router = express.Router()
 
 
@@ -11,5 +11,3 @@ router.get('/', (req, res)=>{
 router.get('/blog', (req, res)=>{
     res.sendFile(path.join(__dirname, '../templates/blog.html'))
 })
-
-module.exports = router
